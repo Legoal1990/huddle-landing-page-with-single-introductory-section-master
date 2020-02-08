@@ -6,9 +6,23 @@
 
 body{
     font-family: 'Open Sans', sans-serif;
-    background-image: url("../images/bg-desktop.svg");
+}
+
+html {
+    background: url("../images/bg-desktop.svg") no-repeat center center fixed;
+    background-size: cover;
+    -moz-background-size: cover; /*Firefox*/
+    -webkit-background-size: cover; /*Mozilla*/
+    -o-background-size: cover; /*Opera*/
     background-color: hsl(257, 40%, 49%);
 }
+
+/*@media screen and (max-width: 1440px) { /* Hacemos la búsqueda y si coincide modificamos las propiedades de la imagen *
+    img#imagen_de_fondo {
+            left: 50%;
+            margin-left: -400px;   /* Agregamos un margen negativo que represente el 50% *
+    }
+}*/
 
 header{
     display:flex;
