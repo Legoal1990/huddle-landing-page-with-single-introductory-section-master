@@ -6,6 +6,12 @@
 
 body{
     font-family: 'Open Sans', sans-serif;
+    font-weight:400;
+    display:flex;
+    flex-direction: column;
+    max-width: 1440px;
+    min-width: 375px;
+    color:white;
 }
 
 html {
@@ -17,12 +23,18 @@ html {
     background-color: hsl(257, 40%, 49%);
 }
 
-/*@media screen and (max-width: 1440px) { /* Hacemos la búsqueda y si coincide modificamos las propiedades de la imagen *
-    img#imagen_de_fondo {
+@media screen and (max-width: 375px) { /* Hacemos la búsqueda y si coincide modificamos las propiedades de la imagen */
+    /*img#imagen_de_fondo {
             left: 50%;
-            margin-left: -400px;   /* Agregamos un margen negativo que represente el 50% *
+            margin-left: -400px;   /* Agregamos un margen negativo que represente el 50% */
+    html{background: url("../images/bg-mobile.svg") no-repeat center center fixed;
+    background-size: cover;
+    -moz-background-size: cover; /*Firefox*/
+    -webkit-background-size: cover; /*Mozilla*/
+    -o-background-size: cover; /*Opera*/
+    background-color: hsl(257, 40%, 49%);
     }
-}*/
+}
 
 header{
     display:flex;
@@ -32,17 +44,28 @@ header{
 
 .contenedor2{
     display: flex;
-    align-items: center;
+    justify-items: center;
+    background-color: aqua;
+    width:90%;
+}
+
+.mockups{
+    background-color:pink;
+}
+
+.mockups image{
+    width:80%;
 }
 
 .description{
     display:flex;
     flex-direction: column;
-    color:white;
+    background-color:grey;
 }
 
 h1{
     font-family: 'Poppins', sans-serif;
+    font-weight: 700;
 }
 
 .boton{
@@ -60,11 +83,39 @@ h1{
     font-weight: 700;
     background-color:white;
     border-radius: 40px;
-    width: 50%;
+    width: 30%;
     height: 50px;
     margin: 30px 40px 40px 40px;
     box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.164);
 }
 
+.boton a:hover { 
+    background-color: hsl(257, 59%, 61%); 
+    color:white;
+}
+
+.redes{
+    background-color: black;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.redes a {
+    text-decoration: none;
+    border-radius: 50%;
+    border: solid 1px white;
+    color:white;
+    overflow:hidden; 
+    margin-left:10px;
+}
+
+.redes a span{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    width: 30px;
+    height: 30px;    
+}
+
 .attribution { font-size: 11px; text-align: center; }
-.attribution a { color: hsl(228, 45%, 44%); }
+.attribution a { color: black; text-decoration: none;}
