@@ -7,6 +7,7 @@
 body{
     font-family: 'Open Sans', sans-serif;
     font-weight:400;
+    font-size: 16px;
     display:flex;
     flex-direction: column;
     max-width: 1440px;
@@ -23,38 +24,66 @@ html {
     background-color: hsl(257, 40%, 49%);
 }
 
-@media screen and (max-width: 375px) { /* Hacemos la búsqueda y si coincide modificamos las propiedades de la imagen */
-    /*img#imagen_de_fondo {
-            left: 50%;
-            margin-left: -400px;   /* Agregamos un margen negativo que represente el 50% */
-    html{background: url("../images/bg-mobile.svg") no-repeat center center fixed;
-    background-size: cover;
-    -moz-background-size: cover; /*Firefox*/
-    -webkit-background-size: cover; /*Mozilla*/
-    -o-background-size: cover; /*Opera*/
-    background-color: hsl(257, 40%, 49%);
+@media screen and (max-width: 375px) {
+    html{
+        background: url("../images/bg-mobile.svg") no-repeat center center fixed;
+        background-size: cover;
+        -moz-background-size: cover; /*Firefox*/
+        -webkit-background-size: cover; /*Mozilla*/
+        -o-background-size: cover; /*Opera*/
+        background-color: hsl(257, 40%, 49%);
     }
+
+    .description{
+        display:flex;
+        text-align: center;
+        background-color:grey;
+    }
+    
+    h1{
+        font-family: 'Poppins', sans-serif;
+        font-weight: 700;
+        
+    }
+    .boton{
+        display:flex;
+        justify-content: center;
+    }
+
+    .boton a{
+        border-radius: 40px;
+        width: 55%;
+        height: 40px;
+    }  
 }
 
 header{
     display:flex;
     justify-content: flex-start;
-    padding: 50px;
+    background-color: yellow;
+    margin:30px 0px 50px 25px;
+}
+
+.logo img{
+    width:50%;
+    background-color: red;   
 }
 
 .contenedor2{
     display: flex;
     justify-items: center;
     background-color: aqua;
-    width:90%;
+    width:100%;
 }
 
 .mockups{
+    display:flex;
+    justify-content: center;
     background-color:pink;
 }
 
-.mockups image{
-    width:80%;
+.mockups img{ 
+    width:85%;
 }
 
 .description{
@@ -66,11 +95,17 @@ header{
 h1{
     font-family: 'Poppins', sans-serif;
     font-weight: 700;
+    margin: 50px 30px 0px 30px;
 }
 
+.texto{
+    font-weight: 400;
+    margin:30px 0px 0px 30px;
+    font-size:16px;
+}
 .boton{
     display:flex;
-    justify-content: center;
+    justify-content: flex-center;
 }
 
 .boton a{
@@ -80,12 +115,13 @@ h1{
     position: relative;
     text-decoration: none; 
     color:hsl(257, 40%, 49%);
-    font-weight: 700;
+    font-size: 14px;
+    font-weight: 400;
     background-color:white;
     border-radius: 40px;
-    width: 30%;
-    height: 50px;
-    margin: 30px 40px 40px 40px;
+    width: 55%;
+    height: 40px;
+    margin: 40px 0px 40px 40px;
     box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.164);
 }
 
@@ -97,7 +133,9 @@ h1{
 .redes{
     background-color: black;
     display: flex;
-    justify-content: flex-end;
+    justify-content: center;
+    margin:40px, 20px, 20px, 20px;    
+    background-color: yellow;
 }
 
 .redes a {
@@ -107,6 +145,7 @@ h1{
     color:white;
     overflow:hidden; 
     margin-left:10px;
+    background-color: bisque;
 }
 
 .redes a span{
@@ -114,8 +153,9 @@ h1{
     justify-content: center;
     align-items: center;
     width: 30px;
-    height: 30px;    
+    height: 30px;   
+    background-color: aquamarine; 
 }
 
-.attribution { font-size: 11px; text-align: center; }
+.attribution { font-size: 11px; text-align: center; margin:20px 0px 40px;}
 .attribution a { color: black; text-decoration: none;}
