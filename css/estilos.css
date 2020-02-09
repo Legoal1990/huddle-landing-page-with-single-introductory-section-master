@@ -7,7 +7,6 @@
 body{
     font-family: 'Open Sans', sans-serif;
     font-weight:400;
-    font-size: 16px;
     display:flex;
     flex-direction: column;
     max-width: 1440px;
@@ -26,25 +25,28 @@ html {
 
 @media screen and (max-width: 375px) {
     html{
-        background: url("../images/bg-mobile.svg") no-repeat center center fixed;
-        background-size: cover;
-        -moz-background-size: cover; /*Firefox*/
-        -webkit-background-size: cover; /*Mozilla*/
-        -o-background-size: cover; /*Opera*/
+        background: url("../images/bg-mobile.svg") no-repeat fixed;
+        background-size: 100% 45%;
+        -moz-background-size: 100% 45%; /*Firefox*/
+        -webkit-background-size: 100% 45%; /*Mozilla*/
+        -o-background-size: 100% 45%; /*Opera*/        
         background-color: hsl(257, 40%, 49%);
+    }
+
+    .logo img{
+        margin-left:0px; 
     }
 
     .description{
         display:flex;
         text-align: center;
-        background-color:grey;
     }
     
-    h1{
+    h2{
         font-family: 'Poppins', sans-serif;
         font-weight: 700;
-        
     }
+
     .boton{
         display:flex;
         justify-content: center;
@@ -55,31 +57,32 @@ html {
         width: 55%;
         height: 40px;
     }  
+    .texto{
+        font-size:13px;
+        margin:30px 30px 0px 30px;
+    }
 }
 
 header{
     display:flex;
     justify-content: flex-start;
-    background-color: yellow;
     margin:30px 0px 50px 25px;
 }
 
 .logo img{
     width:50%;
-    background-color: red;   
+    margin-left:50px;  
 }
 
 .contenedor2{
     display: flex;
     justify-items: center;
-    background-color: aqua;
     width:100%;
 }
 
 .mockups{
     display:flex;
     justify-content: center;
-    background-color:pink;
 }
 
 .mockups img{ 
@@ -89,10 +92,9 @@ header{
 .description{
     display:flex;
     flex-direction: column;
-    background-color:grey;
 }
 
-h1{
+h2{
     font-family: 'Poppins', sans-serif;
     font-weight: 700;
     margin: 50px 30px 0px 30px;
@@ -100,8 +102,8 @@ h1{
 
 .texto{
     font-weight: 400;
-    margin:30px 0px 0px 30px;
-    font-size:16px;
+    margin:30px 30px 0px 30px;
+    font-size:14px;
 }
 .boton{
     display:flex;
@@ -131,11 +133,9 @@ h1{
 }
 
 .redes{
-    background-color: black;
     display: flex;
     justify-content: center;
     margin:40px, 20px, 20px, 20px;    
-    background-color: yellow;
 }
 
 .redes a {
@@ -145,7 +145,6 @@ h1{
     color:white;
     overflow:hidden; 
     margin-left:10px;
-    background-color: bisque;
 }
 
 .redes a span{
@@ -153,8 +152,7 @@ h1{
     justify-content: center;
     align-items: center;
     width: 30px;
-    height: 30px;   
-    background-color: aquamarine; 
+    height: 30px;    
 }
 
 .attribution { font-size: 11px; text-align: center; margin:20px 0px 40px;}
